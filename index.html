@@ -10,7 +10,7 @@
   <body class="bg-success bg-gradient">
     <!-- NAVEGADOR -->
     <div class="header">
-      <nav class="navbar bg-dark navbar-expand-sm opacity-75 fixed-top zindex-sticky">
+      <nav class="navbar bg-dark opacity-75 navbar-expand-sm fixed-top zindex-sticky">
         <div class="container">
           <a class="navbar-brand text-white" href="#">
             <img src="flat-code-logo-collection/logop.svg" alt="" width="40" height="34">
@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01"> 
           <div class="navbar-nav text-end">
              <a class="nav-link text-success active" aria-current="page" href="#">Inicio</a>
-             <a class="nav-link text-success" href="#seccionHabilidades">Acerca de</a>
+             <a class="nav-link text-success" href="#seccionHabilidades">Habilidades</a>
              <a class="nav-link text-success" href="#">Proyectos</a>
              <a class="nav-link text-success" href="#seccionContacto">Contacto</a>
           </div>
@@ -36,17 +36,17 @@
       </nav>
 
       <!-- HEADER -->
-      <header class="container-sm mb-3 mw-100">
+      <header class="container-sm mb-3 mw-100 header">
         <div class="w-100">  
           <div class="container-sm d-flex flex-column flex-md-wrap justify-content-start align-items-center m-auto">
             <div class="p-4 mt-4 ">
               <img src="flat-code-logo-collection/Yasuo_OriginalCentered.jpg"  width="400px" class="mt-4 img-fluid rounded-circle border border-success" >
             </div>
             <div class="p-4 mt-4 text-center">
-              <h1 class="text-success pt-2">Hi, Im Matías Villafañe</h1>
+              <h1 class="text-white pt-2">Hi, Im Matías Villafañe</h1>
             </div>
-             <div class="p-4 mt-4 text-center">
-              <h2 class="text-success pt-2">Im from La Rioja, Argentina.<br>Full Stack development</h2>
+             <div class="p-4 mt-2 text-center">
+              <h2 class="text-white pt-2">I am from La Rioja, Argentina.<br>Full Stack development</h2>
             </div>
           </div>
         </div>
@@ -56,41 +56,59 @@
   <!-- SECTION/ARTICLE -->
 
   <section class="container-sm" id="seccionHabilidades">
-    <p class="h2 text-center p-4">Habilidades</p>
+    <p class="h2 text-center p-2">Habilidades</p>
     <div class="d-flex justify-content-around flex-wrap">
       <div>
-        <div class="card m-2 bg-dark text-white">
+        <div class="card m-2 bg-dark text-white animHover">
             <img src="flat-code-logo-collection/html.svg" class="m-4" height="125px" alt="HTML5">  
             <span class="m-2">HTML5 <br>Nivel: Medio/Experto</span>
         </div>
       </div>
       
       <div>
-        <div class="card m-2  bg-dark text-white">
+        <div class="card m-2  bg-dark text-white animHover">
           <img src="flat-code-logo-collection/CSS3.svg" class="m-4" height="125px" alt="CSS3">
           <span class="m-2">CSS3 <br> Nivel: Medio</span>
         </div>
       </div>
       
       <div>
-        <div class="card m-2 bg-dark text-white">
+        <div class="card m-2 bg-dark text-white animHover">
+          <img src="flat-code-logo-collection/bootstrap-5-1.svg" class="m-4" height="125px" width="120px" alt="JavaScript">
+          <span class="m-2">Bootstrap <br>Nivel: Medio</span> 
+        </div>
+      </div>
+
+      <div>
+        <div class="card m-2 bg-dark text-white animHover">
           <img src="flat-code-logo-collection/js.svg" class="m-4" height="125px" alt="JavaScript">
           <span class="m-2">JavaScript <br>Nivel: Basico</span> 
         </div>
       </div>
+
+      <div>
+        <div class="card m-2 bg-dark text-white animHover">
+          <img src="flat-code-logo-collection/terminal-1.svg" class="m-4" height="125px" width="115px" alt="JavaScript">
+          <span class="m-2">Terminal <br>Nivel: Basico</span> 
+        </div>
+      </div>
+
+      <div>
+        <div class="card m-2 bg-dark text-white animHover">
+          <img src="flat-code-logo-collection/python-5.svg" class="m-4" height="125px" alt="JavaScript">
+          <span class="m-2">Python <br>Nivel: Basico</span> 
+        </div>
+      </div>
+
     </div>
   </section>
 
 
 
-
-
-
-
-
-
-
-
+  <!-- SECTION PROJECTS -->
+  <!-- <section class="container-fluid bg-light mt-4 border border-dark">
+    
+  </section> -->
 
 
 
@@ -194,11 +212,40 @@
    
 
      <!-- FOOTER -->
-    <section class="p-4 mt-1 bg-dark" id="seccionContacto">
+    <section class="container-fluid p-4 mt-3 bg-dark" id="seccionContacto">
+      <div class="container-sm pt-4 d-flex flex-row flex-wrap justify-content-between">
+        <div class="container-sm pt-4 w-50">
+          <h1 class="text-white">Sobre mí</h1>
+          <p class="text-white"></p>
+        </div>
+      
+        <div class="container-sm pt-4 w-50">
+          <h2 class="h2 text-light mb-3">Contacto</h2>
+          <form>
+            <div class="mb-3">
+              <label for="forName" class="form-label text-white">Nombre</label>
+              <input type="text" name="nombre" id="forName" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+              <label for="forEmail" class="form-label text-white">Email</label>
+              <input type="Email" name="email" id="forEmail"   class="form-control" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="forText" class="form-label text-white">Mensaje/Consulta</label>
+              <textarea name="texto" class="form-control" id="forText" placeholder="Texto. . ."></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-success text-light" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
 
-      <div class="d-flex justify-content-between container-sm text-light text-center p-3">
+      <div class="container-sm d-flex justify-content-between align-items-center text-light text-center p-3">
         <span>©Copyright</span>
         <div class="container-sm">
+          <a href="https://www.instagram.com/matiasvd._/" target="_BLANK"><img src="flat-code-logo-collection/instagram-1.svg" class="m-2" height="25px"></a>
           <a href="https://github.com/teslavmd" target="_BLANK" class="m-2"><img src="flat-code-logo-collection/iconmonstr-github-1.svg"></a>
           <a href="https://www.facebook.com/profile.php?id=100008822837109" target="_BLANK"  class="m-2"><img src="flat-code-logo-collection/icons8-facebook.svg"></a>
         </div>

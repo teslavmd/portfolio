@@ -11,13 +11,16 @@ header.fix-top{
 }
 
 header.header{
-	/*background-image: url(../flat-code-logo-collection/bgimg.jpg);*/
-	background: rgb(3,1,13);
-	background: linear-gradient(90deg, rgba(3,1,13,1) 0%, rgba(10,9,121,1) 61%, rgba(0,140,255,1) 100%);
-	/*background-position: center;*/
-	/*background-size: cover;*/
+	background-image: url(../flat-code-logo-collection/bgimg.jpg);
+	background-position: center;
+	background-size: cover;
 
 }
+
+div.animHover:hover{
+	opacity: 0.9;
+}
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";

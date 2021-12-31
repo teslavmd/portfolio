@@ -10,10 +10,14 @@ header.fix-top {
   position: fixed;
 }
 
-.header {
+header.header {
   background-image: url(../flat-code-logo-collection/bgimg.jpg);
   background-position: center;
   background-size: cover;
+}
+
+div.animHover:hover {
+  opacity: 0.9;
 }
 
 /*!
